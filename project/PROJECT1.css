@@ -1,0 +1,38 @@
+/*
+h1 {
+
+    text-align: center;
+
+}
+
+.input {
+
+   text-align: center;
+
+}
+
+footer{
+	padding-top:10px;
+	text-align:center;
+	font-size:10px;
+	color:LightSlateGrey;
+}
+
+ .myInput {
+    text-align: center;
+
+}
+*/
+
+body {
+
+	font-family: NimbusSanL, Arial, sans-serif;
+	text-align: center;
+	color:#282828;
+	background-color:Silver; 
+	padding-top: 200px;
+	padding-right: 200px;
+	padding-bottom: 200px;
+	padding-left: 200px;
+}
+
