@@ -20,7 +20,9 @@ function guessNumber(){
     alert("The number you entered is not an integer, please enter an integer Between 1 to 10 ");
   }
   else{
-    
+      do {
+        
+      
           
          if(a>answer){
           guessedNum.push(a);
@@ -45,7 +47,7 @@ function guessNumber(){
             document.getElementById('butn').disabled=true;
          }
         
-        
+        } while (numOfguess<3); 
     }
   
   
