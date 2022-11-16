@@ -1,19 +1,26 @@
-function name () {
+function name () 
 
-    var name = document.getElementById("myInput").value;
+{
 
+  var name = document.getElementById("Input").value;
+  document.getElementById("myInput").innerHTML  = name;
   
-    }
+}
   
 
-    function mouseOver() {
+function mouseOver()
 
-        document.getElementById("butn").style.color = "red";
+ {
+
+  document.getElementById("butn").style.color = "red";
     
-      }
+ }
     
-      function mouseOut() {
+
+function mouseOut() 
+
+{
     
-        document.getElementById("butn").style.color = "DarkSlateGrey";
+  document.getElementById("butn").style.color = "DarkSlateGrey";
         
-      }
+}
