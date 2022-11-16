@@ -1,4 +1,7 @@
+
 var answer = Math.floor(Math.random() * 10) + 1;
+var numOfguess = 0;
+var guessedNum =[];
 
 function guessNumber(){
 
@@ -17,17 +20,32 @@ function guessNumber(){
     alert("The number you entered is not an integer, please enter an integer Between 1 to 10 ");
   }
   else{
+    
+          
          if(a>answer){
+          guessedNum.push(a);
+          numOfguess += 1;
         document.getElementById("output").innerHTML ='Guess is too high';
+        document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
+        document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
         }
          else if(a<answer){
+          guessedNum.push(a);
+          numOfguess += 1;
         document.getElementById("output").innerHTML ='Guess is too low';
+        document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
+        document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
          }
          else{
+          guessedNum.push(a);
+          numOfguess += 1;
             document.getElementById("output").innerHTML ='Guess is correct';
+            document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
+             document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
             document.getElementById('butn').disabled=true;
          }
-    
+        
+        
     }
   
   
