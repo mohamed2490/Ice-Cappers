@@ -4,11 +4,12 @@ var answer1 = Math.floor(Math.random() * 20) + 1;
 var answer2 = Math.floor(Math.random() * 30) + 1;
 var numOfguess = 0;
 var guessedNum =[];
+score = 0;
 
 function guessNumber1And10(){
 
   //generating a random integer from 1 to 10
-  score = 0;
+  
   
   // take input from the user
  var a=document.getElementById("number1").value;
@@ -30,10 +31,11 @@ function guessNumber1And10(){
           guessedNum.push(a);
           numOfguess += 1;
         document.getElementById("output").innerHTML ='Guess is too high';
+        document.getElementById("message3").innerHTML = "Score : " + score;
         document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
         document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
         if(numOfguess>=3){
-          document.getElementById("output").innerHTML ='Out of tries';
+          document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
           }
        
@@ -44,6 +46,7 @@ function guessNumber1And10(){
           guessedNum.push(a);
           numOfguess += 1;
           document.getElementById("output").innerHTML ='Guess is too low';
+          document.getElementById("message3").innerHTML = "Score : " + score;
         document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
         document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
           if(numOfguess>=3){
@@ -60,6 +63,7 @@ function guessNumber1And10(){
           score += 1;
           answer = Math.floor(Math.random() * 10) + 1;
             document.getElementById("output").innerHTML ='Guess is correct';
+            document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
              document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
           
@@ -99,10 +103,11 @@ else{
         guessedNum.push(a);
         numOfguess += 1;
       document.getElementById("output").innerHTML ='Guess is too high';
+      document.getElementById("message3").innerHTML = "Score : " + score;
       document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
       document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
       if(numOfguess>=5){
-        document.getElementById("output").innerHTML ='Out of tries';
+        document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
         document.getElementById('butn').disabled=true;
         }
      
@@ -113,6 +118,7 @@ else{
         guessedNum.push(a);
         numOfguess += 1;
         document.getElementById("output").innerHTML ='Guess is too low';
+        document.getElementById("message3").innerHTML = "Score : " + score;
       document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
       document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
         if(numOfguess>=5){
@@ -129,6 +135,7 @@ else{
         score += 1;
         answer1 = Math.floor(Math.random() * 20) + 1;
           document.getElementById("output").innerHTML ='Guess is correct';
+          document.getElementById("message3").innerHTML = "Score : " + score;
           document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
            document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
         
@@ -168,10 +175,11 @@ function guessNumber1And30(){
           guessedNum.push(a);
           numOfguess += 1;
         document.getElementById("output").innerHTML ='Guess is too high';
+        document.getElementById("message3").innerHTML = "Score : " + score;
         document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
         document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
         if(numOfguess>=7){
-          document.getElementById("output").innerHTML ='Out of tries';
+          document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
           }
        
@@ -182,6 +190,7 @@ function guessNumber1And30(){
           guessedNum.push(a);
           numOfguess += 1;
           document.getElementById("output").innerHTML ='Guess is too low';
+          document.getElementById("message3").innerHTML = "Score : " + score;
         document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
         document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
           if(numOfguess>=7){
@@ -198,6 +207,7 @@ function guessNumber1And30(){
           score += 1;
           answer1 = Math.floor(Math.random() * 30) + 1;
             document.getElementById("output").innerHTML ='Guess is correct';
+            document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
              document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
           
