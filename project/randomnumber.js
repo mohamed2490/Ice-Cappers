@@ -52,6 +52,8 @@ function guessNumber1And10(){
           if(numOfguess>=3){
           document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
+          document.getElementById('number1').disabled=true;
+          
           }
         
         
@@ -66,6 +68,8 @@ function guessNumber1And10(){
             document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
              document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
+             document.getElementById('number1').disabled=true;
+              
           
 
          }
@@ -109,6 +113,7 @@ else{
       if(numOfguess>=5){
         document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
         document.getElementById('butn').disabled=true;
+        document.getElementById('number1').disabled=true;
         }
      
       
@@ -124,6 +129,7 @@ else{
         if(numOfguess>=5){
         document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
         document.getElementById('butn').disabled=true;
+        document.getElementById('number1').disabled=true;
         }
       
       
@@ -181,6 +187,7 @@ function guessNumber1And30(){
         if(numOfguess>=7){
           document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
+          document.getElementById('number1').disabled=true;
           }
        
         
@@ -196,6 +203,7 @@ function guessNumber1And30(){
           if(numOfguess>=7){
           document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
+          document.getElementById('number1').disabled=true;
           }
         
         
@@ -231,4 +239,13 @@ function mouseOver() {
   
   function mouseOut() {
     document.getElementById("butn").style.color = "black";
+  }
+
+
+  function gameOver(){
+    document.getElementById('butn').disabled=true;
+    document.getElementById('number1').disabled=true;
+    resetButton = document.createElement('button');
+    resetButton.textContent = 'Start new game';
+   
   }
