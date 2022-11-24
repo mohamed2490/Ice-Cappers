@@ -81,7 +81,7 @@ function guessNumber1And10(){
 
 function guessNumber1And20(){
 //generating a random integer from 1 to 10
-score = 0;
+
   
 // take input from the user
 var a=document.getElementById("number1").value;
@@ -153,7 +153,7 @@ else{
 
 function guessNumber1And30(){
   //generating a random integer from 1 to 30
-  score = 0;
+  
     
   // take input from the user
   var a=document.getElementById("number1").value;
@@ -205,7 +205,7 @@ function guessNumber1And30(){
           numOfguess = 0;
           guessedNum = [];
           score += 1;
-          answer1 = Math.floor(Math.random() * 30) + 1;
+          answer2 = Math.floor(Math.random() * 30) + 1;
             document.getElementById("output").innerHTML ='Guess is correct';
             document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
