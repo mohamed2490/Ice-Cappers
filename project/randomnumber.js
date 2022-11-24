@@ -88,11 +88,11 @@ var a=document.getElementById("number1").value;
 var a = parseInt(a);
 
  // Keeps taking input until it fufils conditions of being within range of random number.
-if(a<1||a>10){
-  alert("Please Enter a number Between 1 to 10");
+if(a<1||a>20){
+  alert("Please Enter a number Between 1 to 20");
 }
 else if((Number.isInteger(a))== false){
-  alert("The number you entered is not an integer, please enter an integer Between 1 to 10 ");
+  alert("The number you entered is not an integer, please enter an integer Between 1 to 20 ");
 }
 else{
     
@@ -160,11 +160,11 @@ function guessNumber1And30(){
   var a = parseInt(a);
   
    // Keeps taking input until it fufils conditions of being within range of random number.
-  if(a<1||a>10){
-    alert("Please Enter a number Between 1 to 10");
+  if(a<1||a>30){
+    alert("Please Enter a number Between 1 to 30");
   }
   else if((Number.isInteger(a))== false){
-    alert("The number you entered is not an integer, please enter an integer Between 1 to 10 ");
+    alert("The number you entered is not an integer, please enter an integer Between 1 to 30 ");
   }
   else{
       
