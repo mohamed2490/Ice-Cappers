@@ -24,7 +24,8 @@ footer{
 }
 */
 
-body {
+body
+ {
 
 	font-family: NimbusSanL, Arial, sans-serif;
 	text-align: center;
@@ -36,10 +37,19 @@ body {
 	padding-left: 200px;
 }
 
-#butn {
+#butn 
+
+{
 
 	width: 100px;
 
-
 }
 
+#myInput
+{
+	padding-top: 90px;
+	padding-right: 50px;
+	padding-bottom: 60px;
+	padding-left: 70px;
+
+}
