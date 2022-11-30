@@ -269,3 +269,12 @@ function mouseOver() {
      document.getElementById('butn2').style.visibility="hidden";  
     
   }
+
+  function name () 
+
+{
+
+  var name = document.getElementById("Input").value;
+  document.getElementById("myInput").innerHTML  = name;
+  
+}
