@@ -35,6 +35,7 @@
   
   button {
       color:DarkSlateGrey;
+      width: 100px;
   }
   
   #output, #output2 {
@@ -83,10 +84,12 @@
 
   #butn1{
    visibility:hidden;
+   width: 100px;
   
   }
 
   #butn2{
     visibility:hidden;
+    width: 100px;
 
    }
