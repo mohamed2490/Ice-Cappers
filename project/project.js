@@ -24,7 +24,7 @@ function guessNumber1And10(){
   }
   else{
       
-        
+         
         
           
          if(a>answer){
