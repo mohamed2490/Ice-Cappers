@@ -100,7 +100,7 @@ footer{
     text-align: center;
 
 }
-
+*/
   #butn1{
    visibility:hidden;
    width: 100px;
@@ -112,6 +112,7 @@ footer{
     width: 100px;
 
    }
+   /*
     input, button {
       font:inherit;
       color:Blue;

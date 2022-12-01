@@ -276,5 +276,7 @@ function mouseOver() {
 
   var name = document.getElementById("Input").value;
   document.getElementById("myInput").innerHTML  = name;
+
+  return name;
   
 }
