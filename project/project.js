@@ -39,7 +39,8 @@ function guessNumber1And10(){
           document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible"; 
           }
        
         
@@ -57,7 +58,8 @@ function guessNumber1And10(){
           document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible"; 
           }
         
         
@@ -119,7 +121,8 @@ else{
         document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible"; 
         }
      
       
@@ -137,7 +140,8 @@ else{
         document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible";  
         }
       
       
@@ -197,7 +201,8 @@ function guessNumber1And30(){
           document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible"; 
           }
        
         
@@ -215,7 +220,8 @@ function guessNumber1And30(){
           document.getElementById('butn').disabled=true;
           document.getElementById('number1').disabled=true;
           document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";  
+          document.getElementById('butn2').style.visibility="visible";
+          document.getElementById('butn3').style.visibility="visible"; 
           }
         
         
@@ -267,6 +273,7 @@ function mouseOver() {
      document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
      document.getElementById('butn1').style.visibility="hidden";    
      document.getElementById('butn2').style.visibility="hidden";  
+     document.getElementById('butn3').style.visibility="hidden";  
     
   }
 
@@ -279,5 +286,10 @@ function mouseOver() {
 
   return name;
   
+}
+
+
+function toScoreboard(){
+window.open("scoreboard.html");
 }
 

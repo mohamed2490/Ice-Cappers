@@ -112,6 +112,12 @@ footer{
     width: 100px;
 
    }
+   #butn3{
+    visibility:hidden;
+    width: 100px;
+   
+   }
+
    /*
     input, button {
       font:inherit;
