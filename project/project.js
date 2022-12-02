@@ -4,7 +4,9 @@ var answer1 = Math.floor(Math.random() * 20) + 1;
 var answer2 = Math.floor(Math.random() * 30) + 1;
 var numOfguess = 0;
 var guessedNum =[];
-score = 0;
+var score = 0;
+var highScore = 0;
+
 
 function guessNumber1And10(){
 
@@ -12,6 +14,7 @@ function guessNumber1And10(){
   
   
   // take input from the user
+  
  var a=document.getElementById("number1").value;
   var a = parseInt(a);
 
@@ -37,11 +40,12 @@ function guessNumber1And10(){
         if(numOfguess>=3){
           document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
-          document.getElementById('number1').disabled=true;
-          document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";
-          document.getElementById('butn3').style.visibility="visible"; 
+            document.getElementById('number1').disabled=true;
+            document.getElementById('butn1').style.visibility="visible";
+            document.getElementById('butn2').style.visibility="visible";
+            document.getElementById('butn3').style.visibility="visible"; 
           }
+       
        
         
        
@@ -53,14 +57,15 @@ function guessNumber1And10(){
           document.getElementById("message3").innerHTML = "Score : " + score;
         document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
         document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
-          if(numOfguess>=3){
+        if(numOfguess>=3){
           document.getElementById("output").innerHTML ='Out of tries you scored: '+ score + " points.";
           document.getElementById('butn').disabled=true;
-          document.getElementById('number1').disabled=true;
-          document.getElementById('butn1').style.visibility="visible";
-          document.getElementById('butn2').style.visibility="visible";
-          document.getElementById('butn3').style.visibility="visible"; 
+            document.getElementById('number1').disabled=true;
+            document.getElementById('butn1').style.visibility="visible";
+            document.getElementById('butn2').style.visibility="visible";
+            document.getElementById('butn3').style.visibility="visible"; 
           }
+       
         
         
          }
@@ -68,9 +73,13 @@ function guessNumber1And10(){
           guessedNum.push(a);
           numOfguess = 0;
           guessedNum = [];
+          if(score>=highScore){
+          highScore += 1;
+          }
           score += 1;
           answer = Math.floor(Math.random() * 10) + 1;
             document.getElementById("output").innerHTML ='Guess is correct';
+            document.getElementById("message4").innerHTML = "High Score : " + highScore;
             document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
              document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
@@ -150,9 +159,13 @@ else{
         guessedNum.push(a);
         numOfguess = 0;
         guessedNum = [];
+        if(score>=highScore){
+          highScore += 1;
+          }
         score += 1;
         answer1 = Math.floor(Math.random() * 20) + 1;
           document.getElementById("output").innerHTML ='Guess is correct';
+          document.getElementById("message4").innerHTML = "High Score : " + highScore;
           document.getElementById("message3").innerHTML = "Score : " + score;
           document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
            document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
@@ -230,9 +243,13 @@ function guessNumber1And30(){
           guessedNum.push(a);
           numOfguess = 0;
           guessedNum = [];
+          if(score>=highScore){
+            highScore += 1;
+            }
           score += 1;
           answer2 = Math.floor(Math.random() * 30) + 1;
             document.getElementById("output").innerHTML ='Guess is correct';
+            document.getElementById("message4").innerHTML = "High Score : " + highScore;
             document.getElementById("message3").innerHTML = "Score : " + score;
             document.getElementById("message1").innerHTML = "No. Of Guesses : " + numOfguess;
              document.getElementById("message2").innerHTML = "Guessed Number Are: " + guessedNum;
@@ -289,7 +306,11 @@ function mouseOver() {
 }
 
 
-function toScoreboard(){
-window.open("scoreboard.html");
+function toScoreboard(name,scores){
+var listNames = [];
+var listScores = [];
+listNames.push(name);
+listScores.push(score);
+document.getElementById("output").innerHTML ='Name: ' + name +" Score:" + score;
 }
 
