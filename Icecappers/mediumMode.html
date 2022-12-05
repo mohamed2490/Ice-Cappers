@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="En">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EECS1012: Project - Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="project.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Guess a random number between 1 and 20</h1>
+    </header>
+
+    <div class="column1">
+      <div class="input">
+        <p>High Score : <span id="highScore"></span></p>
+        <p>Score : <span id="score"></span></p>
+        <p>No. of Guesses : <span id="noGuesses"></span></p>
+        <p>Guessed number are : <span id="guessedNums"></span></p>
+      </div>
+
+      <div class="input">
+        Guess:<input id="number1" type="number" min="-32768" max="32767" />
+      </div>
+
+      <div class="input">
+        <button id="butn" data-mode="mediumMode">enter</button>
+      </div>
+      <div class="endGame">
+        <button id="butn1">Restart?</button>
+        <button id="butn2" onclick="window.location.href = 'mainMenu.html'">
+          Main Menu
+        </button>
+      </div>
+      <p id="output"></p>
+    </div>
+    <!--in Ex6, add a button beside the original button. Also add a output paragraph below the existing output paragraph -->
+
+    <footer>&copy; Author(s): <span> Mohamed Ahmed, Hamza Mohamed & Amir Fadaei</span></footer>
+    <script src="project_client.js"></script>
+  </body>
+</html>
